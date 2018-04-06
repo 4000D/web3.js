@@ -41,7 +41,8 @@
     "watch": "gulp watch",
     "lint": "jshint *.js lib",
     "test": "mocha; jshint *.js lib",
-    "test-coveralls": "istanbul cover _mocha -- -R spec && cat coverage/lcov.info | coveralls --verbose"
+    "test-coveralls": "istanbul cover _mocha -- -R spec && cat coverage/lcov.info | coveralls --verbose",
+    "install": "cp ./dist/web3.js ../go-ethereum/internal/jsre/deps/web3.js"
   },
   "repository": {
     "type": "git",
@@ -84,6 +85,5 @@
       "url": "https://github.com/obscuren"
     }
   ],
-
   "license": "LGPL-3.0"
 }
